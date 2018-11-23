@@ -1,0 +1,7 @@
+# ユーザの作成
+`create user "username" identified by "password"`
+
+## トラブルシューティング
+- `Your password does not satisfy the current policy requirements`
+  - デフォルトのパスワード制限は英小文字、大文字、数値、特殊文字を1文字ずつ必要とする
+  - 緩和するには`set global validate_password_policy=LOW;`
