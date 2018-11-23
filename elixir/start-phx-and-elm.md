@@ -27,3 +27,6 @@
 13. `root/lib/projectname_web/templates/page/index.html.eex`を`<div id="elm-container"></div>`だけにする
 14. `root/lib/projectname_web/router.ex`のscopeのgetを"/"から"/*path"にする
   - ルーティングをelmに任せる設定
+15. `.gitignore`に以下追加
+  - `elm-stuff/`
+  - `/assets/vendor/main.js`
