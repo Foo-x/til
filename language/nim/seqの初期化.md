@@ -23,7 +23,7 @@ for i in 0..<N:
     - newSeqUninitializedは数値のseqでしか使えない
 
 ```nim
-var arr = newSeqOfCap[int](N)
+var arr = newSeqOfCap[string](N)
 arr.setLen(N)
 for i in 0..<N:
   arr[i] = x
