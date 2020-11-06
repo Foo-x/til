@@ -12,24 +12,34 @@
         - 100万リクエストまで無料、100万リクエストあたり0.2USD
         - 実行時間1GB-秒あたり約0.000017USD
 - DB
-    - DynamoDB or EC2 or Lightsail
+    - DynamoDB or Firebase or EC2 or Lightsail
     - DynamoDB（オンデマンド）
         - 書き込み1GBあたり約1.4USD
         - 読み込み4GBあたり0.285USD + 1GBあたり0.114USD（転送）
             - 転送は同一リージョン内であれば無料、また別リージョンでも1GBまで無料
         - ストレージ25GBまで無料、1GBあたり0.285USD
+    - Firebase Cloud Firestore
+        - 書き込み1日2万回まで無料、10万回あたり0.18USD
+        - 読み込み1日5万回まで無料、10万回あたり0.06USD
+        - 削除1日2万回まで無料、10万回あたり0.02USD
+        - ストレージ1GiBまで無料、1GiBあたり0.18USD
 - ストレージ
-    - S3 or Wasabi or EC2 or Lightsail
+    - S3 or Wasabi or Firebase or EC2 or Lightsail
     - 画像、音声、動画などを置く
     - S3
         - ストレージ1GBあたり0.025USD
         - PUT/COPY/POST/LISTリクエスト1000回あたり0.0047USD
         - その他リクエスト1000回あたり0.00037USD
-        - 読み込み1GBあたり0.114USD
+        - 読み込み1GBまで無料、1GBあたり0.114USD
     - Wasabi
         - ストレージ1GBあたり約0.79円
         - ただし最低利用料として1TB分かかる
             - 1TB未満しか保存していなくても1TBは請求される
+    - Firebase Storage
+        - ストレージ5GBまで無料、1GBあたり0.026USD
+        - アップロード1日2万回まで無料、1万回あたり0.05USD
+        - ダウンロード1日5万回まで無料、1万回あたり0.004USD
+        - 読み込み1日1GBまで無料、1GBあたり0.12USD
     - ストレージは転送量が多くなりやすいのでWasabi以外は注意
 
 
