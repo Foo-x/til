@@ -3,8 +3,9 @@
 個人開発などでWebアプリを安く運用する構成案（2020/11/06時点）
 
 - フロントエンド
-    - GitHub Pages or Netlify
+    - (GitHub Pages or Netlify) + CloudFlare
     - 静的にして無料でホスティング
+    - CloudFlareを挟んで帯域を節約する
 - バックエンド
     - AWS Lambda or Lightsail
     - 静的にできない処理はこちらで対応
