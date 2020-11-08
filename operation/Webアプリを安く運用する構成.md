@@ -7,10 +7,10 @@
     - 静的にして無料でホスティング
     - CloudFlareを挟んで帯域を節約する
 - バックエンド
-    - AWS Lambda or Lightsail
+    - (AWS Lambda + API Gateway) or Lightsail
     - 静的にできない処理はこちらで対応
-    - Lambda
-        - 100万リクエストまで無料、100万リクエストあたり0.2USD
+    - Lambda + API Gateway (HTTP API)
+        - 100万リクエストまで1.29USD、100万リクエストあたり0.2USD + 1.29USD
         - 実行時間1GB-秒あたり約0.000017USD
         - 読み込み1GBまで無料、1GBあたり0.114USD
 - DB
