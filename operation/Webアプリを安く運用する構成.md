@@ -55,7 +55,7 @@
 
 | サービス | メモリ | vCPU | SSD | 転送量上限 | 帯域 | その他 |
 | --- | --- | --- | --- | --- | --- | --- |
-| Lightsail 3.5USD | 512MB | 1 | 20GB | 1TB | ? | VPC内の転送は上限を超えても無料。ストレージは1GBあたり0.1USDで追加可能 |
+| Lightsail 3.5USD | 512MB | 1 | 20GB | 1TB | ? | VPC内の転送は上限を超えても無料。ストレージは1GBあたり0.1USDで追加可能。CPU使用率に制限あり |
 | Lightsail 5USD | 1GB | 1 | 40GB | 2TB | ? | 同上 |
 | Lightsail 10USD | 2GB | 1 | 60GB | 3TB | ? | 同上 |
 | Lightsail 20USD | 4GB | 2 | 80GB | 4TB | ? | 同上 |
