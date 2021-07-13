@@ -4,12 +4,17 @@
 
 まずは無料枠で賄えないか検討する。
 
-- [ずっと無料で使えるクラウドの「Free Tier」主要サービスまとめ。2020年版 － Publickey](https://www.publickey1.jp/blog/20/free_tier2020.html)
+- [ずっと無料で使えるクラウドの「Free Tier」主要サービスまとめ。2021年版 － Publickey](https://www.publickey1.jp/blog/21/free_tier2021.html)
 - [Cloudflare Pages・Vercel ・Netlify の違いや使い分けをまとめる](https://zenn.dev/catnose99/scraps/6780379210136f)
 - [Fly App Pricing · Fly](https://fly.io/docs/about/pricing/)
 
 
 ## 有料
+
+追記: 全体的にOracle Cloudが安い？ただ仮想マシンに関してはAWSのスポットインスタンスのほうが安そう。情報が少ないので使い勝手を含めて要調査。  
+[無料枠](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm)  
+[コスト計算ツール](https://www.oracle.com/jp/cloud/cost-estimator.html)  
+[AWSとの比較](https://www.oracle.com/jp/cloud/economics/)
 
 - バックエンド
     - (AWS Lambda + API Gateway) or VPS
@@ -51,6 +56,10 @@
 
 
 ## VPS比較
+
+- [Lightsail](https://aws.amazon.com/jp/lightsail/)
+- [WebArena VPS Indigo](https://web.arena.ne.jp/indigo/)
+- [さくらのVPS](https://vps.sakura.ad.jp/)
 
 | サービス | メモリ | vCPU | SSD | 転送量上限 | 帯域 | その他 |
 | --- | --- | --- | --- | --- | --- | --- |
