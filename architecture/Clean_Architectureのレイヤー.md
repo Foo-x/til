@@ -16,3 +16,23 @@
     - 最も具体的な層
 
 大事なのはレイヤーを4つに分けることではなく、内側から外側に依存しないこと
+
+最も細かく分けた場合のディレクトリ構造の例
+
+```
+.
+└── src
+    ├── adapters          // Interface Adapters 層
+    │   ├── controllers  // 入力に関するコード
+    │   ├── gateways     // Webとのやり取りに関するコード
+    │   ├── presenters   // 出力に関するコード
+    │   └── repositories // DBとのやり取りに関するコード
+    ├── entities          // Entities層
+    ├── infra             // Frameworks & Drivers 層
+    │   ├── apis         // Web API に関するコード
+    │   ├── db           // DBに関するコード
+    │   ├── frameworks   // フレームワークに関するコード
+    │   └── fs           // ファイルシステムに関するコード
+    │   └── views        // UIに関するコード
+    └── usecases          // Use Cases 層
+```
