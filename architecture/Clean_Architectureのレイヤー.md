@@ -22,17 +22,17 @@
 ```
 .
 └── src
-    ├── adapters          // Interface Adapters 層
+    ├── adapters         // Interface Adapters 層
     │   ├── controllers  // 入力に関するコード
     │   ├── gateways     // Webとのやり取りに関するコード
     │   ├── presenters   // 出力に関するコード
     │   └── repositories // DBとのやり取りに関するコード
-    ├── entities          // Entities層
-    ├── infra             // Frameworks & Drivers 層
+    ├── entities         // Entities層
+    ├── infra            // Frameworks & Drivers 層
     │   ├── apis         // Web API に関するコード
     │   ├── db           // DBに関するコード
     │   ├── frameworks   // フレームワークに関するコード
     │   └── fs           // ファイルシステムに関するコード
     │   └── views        // UIに関するコード
-    └── usecases          // Use Cases 層
+    └── usecases         // Use Cases 層
 ```
