@@ -1,0 +1,3 @@
+# NAPT
+
+Network Address Port Translation の略で、IPマスカレードともいう。LAN内でプライベートIPアドレスを持つ複数の端末がひとつのグローバルIPアドレスを共有してインターネットにアクセスする仕組み。
