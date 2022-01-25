@@ -3,13 +3,13 @@
 ## 結論
 
 ```sh
-git clone --filter=blob:none --sparse --depth=1 <url>
+git clone --filter=blob:none --sparse <url>
 
 git sparse-checkout init --cone
 
-git sparse-checkout set path/to/develop
+git sparse-checkout set path/to/target
 
-# git 2.35 からはinitせずに set --cone path/to/develop のようにできる
+# git 2.35 からはinitせずに set --cone path/to/target のようにできる
 ```
 
 
@@ -32,13 +32,11 @@ checkoutやdiffをしたときにダウンロードされる。
 `--sparse` でリポジトリのルートのみダウンロードし、`sparse-checkout` で必要なファイルを指定する。
 
 
-### シャロークローン
-
-`--depth=1`
-
-最新のコミットから必要な履歴だけダウンロードする。
-
-
 ## 参考
 
+- [パーシャルクローンとシャロークローンを活用しよう - GitHubブログ](https://github.blog/jp/2021-01-13-get-up-to-speed-with-partial-clone-and-shallow-clone/)
+    - シャロークローンが非推奨である理由あり
 - [大きなGitリポジトリをクローンするときの工夫を図解します - DeNA Testing Blog](https://swet.dena.com/entry/2021/07/12/120000)
+    - 毎回クローンするCIの場合はシャロークローンしてもOK
+        - Jenkinsは一度クローンしたものに追加していくのでNG
+- [git2.27以降にgit sparse-checkoutを使う場合はno-checkoutではなくsparseを使おう - はんなりと、ゆるやかに](https://iucstscui.hatenablog.com/entry/2020/08/29/080322)
