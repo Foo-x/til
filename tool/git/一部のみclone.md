@@ -28,8 +28,8 @@ checkoutやdiffをしたときにダウンロードされる。
 
 `--sparse`, `sparse-checkout`
 
-必要なファイルだけダウンロードする。  
-`--sparse` でリポジトリのルートのみダウンロードし、`sparse-checkout` で必要なファイルを指定する。
+指定したパスのファイルだけダウンロードする。  
+`--sparse` でリポジトリのルートのみダウンロードし、`sparse-checkout` でパスを指定する。
 
 
 ## 参考
