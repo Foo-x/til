@@ -1,6 +1,6 @@
 # iframe内の操作
 
-iframe内を埋め込んだ側から JavaScript で操作することはできない。  
+iframe内の要素を埋め込んだ側から JavaScript で操作することはできない。  
 ただし、以下の対応をすることで間接的に操作できるようになる。
 
 - 埋め込まれる側の対応
@@ -9,7 +9,7 @@ iframe内を埋め込んだ側から JavaScript で操作することはでき�
     - レスポンスを返す必要がある場合は、`event.source.postMessage` で返す
 - 埋め込む側の対応
     - 操作に対応するメッセージを `postMessage` でiframeに対して送る
-    - iframe内からのレスポンスを受け取る必要がある場合は、`message` イベントのリスナーを登録して受け取る
+    - レスポンスを受け取る必要がある場合は、`message` イベントのリスナーを登録して受け取る
 
 詳細は下を参照。  
 https://developer.mozilla.org/ja/docs/Web/API/Window/postMessage
