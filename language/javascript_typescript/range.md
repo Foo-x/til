@@ -2,10 +2,8 @@
 
 ```js
 function* range(start, end, step=1) {
-  let i = start;
-  while (i < end) {
+  for (let i = start; i < end; i += step) {
     yield i;
-    i += step;
   }
 }
 
