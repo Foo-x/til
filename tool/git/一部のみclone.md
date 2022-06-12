@@ -5,6 +5,8 @@
 ```sh
 git clone --filter=blob:none --sparse <url>
 
+cd <cloneしたディレクトリ>
+
 git sparse-checkout init --cone
 
 git sparse-checkout set path/to/target
