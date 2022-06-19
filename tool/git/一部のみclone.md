@@ -7,11 +7,19 @@ git clone --filter=blob:none --sparse <url>
 
 cd <cloneしたディレクトリ>
 
+git sparse-checkout set --cone path/to/target
+```
+
+git 2.34 以前は以下のようにする。
+
+```sh
+git clone --filter=blob:none --sparse <url>
+
+cd <cloneしたディレクトリ>
+
 git sparse-checkout init --cone
 
 git sparse-checkout set path/to/target
-
-# git 2.35 からはinitせずに set --cone path/to/target のようにできる
 ```
 
 
@@ -32,6 +40,16 @@ checkoutやdiffをしたときにダウンロードされる。
 
 指定したパスのファイルだけダウンロードする。  
 `--sparse` でリポジトリのルートのみダウンロードし、`sparse-checkout` でパスを指定する。
+
+
+## その他
+
+開発ではなく使用したいだけのときやCIなどで最新のコミットだけが必要であれば以下のようにする。  
+もちろんパーシャルクローンやスパースチェックアウトと組み合わせてもOK。
+
+```sh
+git clone --depth 1 <url>
+```
 
 
 ## 参考
