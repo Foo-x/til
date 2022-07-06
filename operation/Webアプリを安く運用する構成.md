@@ -68,6 +68,7 @@
 | Lightsail 10USD | 2GB | 1 | 60GB | 3TB | ? | 同上 |
 | Lightsail 20USD | 4GB | 2 | 80GB | 4TB | ? | 同上 |
 | Lightsail 40USD | 8GB | 2 | 160GB | 5TB | ? | 同上 |
+| WebArena VPS Indigo 297円 | GB | 1 | 20GB | なし | 100Mbps | IPv6のみ |
 | WebArena VPS Indigo 349円 | 1GB | 1 | 20GB | なし | 100Mbps | |
 | WebArena VPS Indigo 699円 | 2GB | 2 | 40GB | なし | 100Mbps | |
 | WebArena VPS Indigo 1272円 | 4GB | 4 | 80GB | なし | 500Mbps | |
