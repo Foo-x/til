@@ -11,11 +11,6 @@
 
 ## 有料
 
-追記: 全体的にOracle Cloudが安い？ただ仮想マシンに関してはAWSのスポットインスタンスのほうが安そう。情報が少ないので使い勝手を含めて要調査。  
-[無料枠](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm)  
-[コスト計算ツール](https://www.oracle.com/jp/cloud/cost-estimator.html)  
-[AWSとの比較](https://www.oracle.com/jp/cloud/economics/)
-
 - バックエンド
     - (AWS Lambda + API Gateway) or VPS
     - Lambda + API Gateway (HTTP API)
@@ -110,3 +105,13 @@
 1リクエストあたり1MBとして、1万リクエストで10GB、100万リクエストで1TB。
 
 100Mbps は1ヶ月フルで使うとだいたい 32.5TB。
+
+
+## その他
+
+Oracle Cloud は無料枠が大きく、有料枠も安いが、いきなりBANされる上にサポートも適当なので使わないほうが良い。  
+
+- [Oracle Cloud Infrastructureのアカウントが突然停止したので状況や調査内容を書いていく](https://zenn.dev/shinshin86/scraps/022e44712274fd?utm_source=pocket_mylist)
+- [ORACLE Cloud Infrastructure どころか ORACLEさんから一方的にフラれたお話｜Dice.K｜note](https://note.com/dicek142/n/n22fa205324ed?utm_source=pocket_mylist)
+- [Oracle Cloud Free Tier（Always Free） 理由なく突然使えなくなった話です。 - yumeno-miyukiのブログ](https://yumenohikari.hatenablog.com/entry/2022/04/09/235958)
+- 上以外にも海外国内問わずBAN報告が大量にあり、いまだに理由がわかっていない
