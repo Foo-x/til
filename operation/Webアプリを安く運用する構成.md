@@ -6,7 +6,6 @@
 
 - [ずっと無料で使えるクラウドの「Free Tier」主要サービスまとめ。2021年版 － Publickey](https://www.publickey1.jp/blog/21/free_tier2021.html)
 - [Cloudflare Pages・Vercel ・Netlify の違いや使い分けをまとめる](https://zenn.dev/catnose99/scraps/6780379210136f)
-- [Fly App Pricing · Fly](https://fly.io/docs/about/pricing/)
 
 
 ## 有料
