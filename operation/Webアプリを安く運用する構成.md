@@ -98,11 +98,11 @@ S3の場合、単独ではHTTPSでホスティングできないので別のサ�
 | Lightsail $10 | 2GB | 1 | 60GB | 3TB | ? | 同上 |
 | Lightsail $20 | 4GB | 2 | 80GB | 4TB | ? | 同上 |
 | Lightsail $40 | 8GB | 2 | 160GB | 5TB | ? | 同上 |
-| WebArena VPS Indigo 297円 | GB | 1 | 20GB | なし | 100Mbps | IPv6のみ |
-| WebArena VPS Indigo 349円 | 1GB | 1 | 20GB | なし | 100Mbps | |
-| WebArena VPS Indigo 699円 | 2GB | 2 | 40GB | なし | 100Mbps | |
-| WebArena VPS Indigo 1272円 | 4GB | 4 | 80GB | なし | 500Mbps | |
-| WebArena VPS Indigo 2798円 | 8GB | 6 | 160GB | なし | 1Gbps | |
+| WebARENA Indigo 297円 | GB | 1 | 20GB | なし | 100Mbps | IPv6のみ。セキュリティグループなし |
+| WebARENA Indigo 349円 | 1GB | 1 | 20GB | なし | 100Mbps | |
+| WebARENA Indigo 699円 | 2GB | 2 | 40GB | なし | 100Mbps | |
+| WebARENA Indigo 1272円 | 4GB | 4 | 80GB | なし | 500Mbps | |
+| WebARENA Indigo 2798円 | 8GB | 6 | 160GB | なし | 1Gbps | |
 | さくらのVPS 644円 | 512MB | 1 | 25GB | なし | 100Mbps | |
 | さくらのVPS 880円 | 1GB | 2 | 50GB | なし | 100Mbps | |
 | さくらのVPS 1738円 | 2GB | 3 | 100GB | なし | 100Mbps | |
