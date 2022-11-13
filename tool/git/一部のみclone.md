@@ -53,6 +53,18 @@ checkoutやdiffをしたときにダウンロードされる。
 開発用にクローンするときは使わない。（参考のリンク先を参照）
 
 
+### ブランチ指定
+
+`--single-branch -b <ブランチ>`
+
+指定したブランチだけダウンロードする。  
+fetchもそのブランチだけが対象になる。  
+`-b <ブランチ>` を省略するとデフォルトブランチが対象になる。
+
+あとで他のブランチも対象にしたいときは `.git/config` に `remote.fetch` を追加する。  
+すべてのブランチを対象にしたいときは既存の `remote.fetch` のブランチ名を `*` にする。
+
+
 ## 参考
 
 - [パーシャルクローンとシャロークローンを活用しよう - GitHubブログ](https://github.blog/jp/2021-01-13-get-up-to-speed-with-partial-clone-and-shallow-clone/)
