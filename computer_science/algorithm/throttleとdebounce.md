@@ -14,27 +14,27 @@
 たとえば以下のようになる。
 
 ```
-// 1文字100ms、500msごとに間引くとする
+# 1文字100ms、500msごとに間引くとする
 
-// 生の発火データ
+# 生の発火データ
 ||| |   ||| |         | ||         ||| |||
 
-// throttle (leading)
+# throttle (leading)
 |       |             |            |    |
 
-// throttle (trailing)
+# throttle (trailing)
      |    |    |           |            |    |
 
-// throttle (leading, trailing)
+# throttle (leading, trailing)
 |    |    |    |      |    |       |    |    |
 
-// debounce (leading)
+# debounce (leading)
 |                     |            |
 
-// debounce (trailing)
+# debounce (trailing)
                  |            |               |
 
-// debounce (leading, trailing)
+# debounce (leading, trailing)
 |                |    |       |    |          |
 ```
 
