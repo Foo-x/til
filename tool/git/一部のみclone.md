@@ -39,7 +39,8 @@ checkoutやdiffをしたときにダウンロードされる。
 `--sparse`, `sparse-checkout`
 
 指定したパスのファイルだけダウンロードする。  
-`--sparse` でリポジトリのルートのみダウンロードし、`sparse-checkout` でパスを指定する。
+`--sparse` でリポジトリのルートのみダウンロードし、`sparse-checkout` でパスを指定する。  
+クローン後に無効化してすべてのファイルをダウンロードするには `git sparse-checkout disable` を実行する。
 
 
 ## その他
