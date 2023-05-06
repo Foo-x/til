@@ -1,9 +1,9 @@
 # Clean Architectureのレイヤー
 
-1. Entities
+1. Enterprise Business Rules
     - ドメイン固有のルールを扱う
     - 最も抽象的な層
-2. Use Cases
+2. Application Business Rules
     - アプリ固有のルールを扱う
     - Entitiesを組み合わせて問題を解決する層
 3. Interface Adapters
@@ -40,12 +40,12 @@
     │   ├── gateways     // Webとのやり取りに関するコード
     │   ├── presenters   // 出力に関するコード
     │   └── repositories // DBとのやり取りに関するコード
-    ├── entities         // Entities層
+    ├── entities         // Enterprise Business Rules 層
     ├── infra            // Frameworks & Drivers 層
     │   ├── apis         // Web API に関するコード
     │   ├── db           // DBに関するコード
     │   ├── frameworks   // フレームワークに関するコード
     │   └── fs           // ファイルシステムに関するコード
     │   └── views        // UIに関するコード
-    └── usecases         // Use Cases 層
+    └── usecases         // Application Business Rules 層
 ```
