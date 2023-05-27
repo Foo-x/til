@@ -31,7 +31,8 @@ Apacheではデフォルトで `<inode>-<mtime>-<size>` を設定する。
 
 ## キャッシュ制御
 
-`Cache-Control` レスポンスヘッダでクライアントや中間サーバのキャッシュを制御できる。
+`Cache-Control` レスポンスヘッダでクライアントや中間サーバのキャッシュを制御できる。  
+指定しない場合はブラウザが判断する。
 
 なお、`Cache-Control` に対応していないクライアントや中間サーバ用の後方互換として `Expires` と `Pragma` というヘッダを設定することもあるが、ここでは省略する。
 
@@ -107,3 +108,4 @@ URLやファイル名にバージョンやビルドハッシュなどを含め�
 - [ETag - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/ETag)
 - [Last-Modified - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Last-Modified)
 - [HTTPキャッシュを使用して不要なネットワーク要求を防ぐ](https://web.dev/i18n/ja/http-cache/)
+- [Cache-Controlヘッダがないときもブラウザがキャッシュする！？](https://zenn.dev/kawakawaryuryu/articles/75af6ae44d2939)
