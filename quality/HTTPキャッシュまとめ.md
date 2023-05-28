@@ -94,6 +94,17 @@ Apacheではデフォルトで `<inode>-<mtime>-<size>` を設定する。
 2023/3/22 現在、OperaとSafariは対応していない。
 
 
+## Varyヘッダ
+
+同じURLであってもリクエストヘッダに応じてレスポンスが変わる場合がある。  
+たとえば `Accept-Language` でレスポンスの言語を分けている場合など。  
+そのときはレスポンスヘッダに `Vary: Accept-Language` を指定する。  
+指定しないと、日本語でレスポンスを取得した後に設定を英語に変えても、ブラウザは日本語のキャッシュを使ってしまう。
+
+他に `User-Agent`（PC/スマホ）、`Accept-Encoding`（圧縮有無）などがよく指定される。  
+なお、カンマ区切りで複数指定できる。
+
+
 ## Cache Busting パターン
 
 URLやファイル名にバージョンやビルドハッシュなどを含めて一意にすることを Cache Busting パターンという。  
@@ -107,5 +118,6 @@ URLやファイル名にバージョンやビルドハッシュなどを含め�
 - [Cache-Control - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Cache-Control)
 - [ETag - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/ETag)
 - [Last-Modified - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Last-Modified)
+- [Vary - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Vary)
 - [HTTPキャッシュを使用して不要なネットワーク要求を防ぐ](https://web.dev/i18n/ja/http-cache/)
 - [Cache-Controlヘッダがないときもブラウザがキャッシュする！？](https://zenn.dev/kawakawaryuryu/articles/75af6ae44d2939)
