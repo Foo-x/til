@@ -12,4 +12,4 @@ Strictモードを有効にすると以下の挙動になり、バグを見つ�
 
 参考
 
-- [<StrictMode> – React](https://react.dev/reference/react/StrictMode)
+- [\<StrictMode\> – React](https://react.dev/reference/react/StrictMode)
