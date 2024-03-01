@@ -3,7 +3,8 @@
 再現方法が不明だが、重いファイルをダウンロードしようとして長時間ネットワーク接続するとインターネットにつながらなくなることがある。  
 WSL内で `ping google.com` がつながらず、`ping 8.8.8.8` だとつながる。  
 Windows側だと `ping google.com` でもつながる。  
-このとき、`wsl --shutdown` などで再起動しても解決せず、PCごと再起動する必要がある。
+このとき、`wsl --shutdown` などで再起動しても解決せず、PCごと再起動する必要がある。  
+もしくは管理者権限のPowerShellで `taskkill /f /im wslservice.exe` でも良い。
 
 Windows側のホームフォルダの.wslconfig `/mnt/c/Users/<user>/.wslconfig` に以下の設定をするとWSL内からWindowsのDNS設定を使うようになり、再起動せずに解決する。
 
