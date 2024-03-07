@@ -2,6 +2,7 @@
 
 - ブランチ名
     - `git rev-parse --abbrev-ref @`
+    - 2.22以上であれば `git branch --show-current`
 - SHA-1
     - `git rev-parse @`
 - SHA-1 (short)
