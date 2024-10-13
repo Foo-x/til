@@ -99,7 +99,7 @@ T字書式の箱同士を線でつなぎ、ER図のIE記法（Crow's Foot 記法
 
 Eventの箱の左側にResourceの個体指定子を加える。このとき、(R) の記号を付ける。このRはResourceのRではなく、RelationのR。
 
-たとえば、顧客番号の個体指定子を持つResouceと受注のEventをつないだとき、受注の箱の左側に「顧客番号 (R)」を加える。
+たとえば、顧客番号の個体指定子を持つResourceと受注のEventをつないだとき、受注の箱の左側に「顧客番号 (R)」を加える。
 
 
 ### (Event, Event) 関係
